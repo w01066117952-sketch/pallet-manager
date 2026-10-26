@@ -10,46 +10,62 @@
             background-color: #12121a;
             color: #ffffff;
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .container {
             width: 100%;
-            max-width: 500px;
+            max-width: 600px;
         }
         h2 {
             text-align: center;
-            margin-bottom: 25px;
-            font-size: 22px;
+            margin-bottom: 20px;
+            font-size: 20px;
             color: #ffffff;
         }
-.table-box {
+        .table-box {
             background-color: #1a1a2e;
             border: 1px solid #2a2a40;
-            border-radius: 8px;
+            border-radius: 6px;
             overflow: hidden;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             text-align: left;
-            font-size: 14px;
+            font-size: 13px;
         }
         th, td {
-            padding: 12px 15px;
+            padding: 10px 12px;
             border-bottom: 1px solid #2a2a40;
         }
-        th {
-            width: 35%;
+        /* 3열 구조 헤더 스타일 */
+        .header-row th {
+            background-color: #161625;
+            color: #a0a0c0;
+            text-align: center;
+            font-weight: 600;
+            border-bottom: 2px solid #2a2a40;
+        }
+        /* 구분 열 */
+        .col-gubun {
+            width: 28%;
             color: #a0a0c0;
             background-color: #161625;
             font-weight: 500;
         }
-        td {
-            width: 65%;
+        /* 내용 열 */
+        .col-content {
+            width: 42%;
             color: #ffffff;
+        }
+        /* 비고 열 */
+        .col-note {
+            width: 30%;
+            color: #a0a0c0;
+            font-size: 12px;
         }
         tr:last-child th, tr:last-child td {
             border-bottom: none;
@@ -61,50 +77,72 @@
     </style>
 </head>
 <body>
+
 <div class="container">
     <h2>팔레트 상세 검색</h2>
-    
+
     <div class="table-box">
         <table>
-            <tr>
-                <th>관리번호</th>
-                <td class="highlight">A2-243</td>
+            <!-- 3열 테이블 헤더 -->
+            <tr class="header-row">
+                <th>구분</th>
+                <th>내용</th>
+                <th>비고</th>
             </tr>
             <tr>
-                <th>부문[담당]</th>
-                <td>가공부</td>
+                <td class="col-gubun">관리번호</td>
+                <td class="col-content highlight">A2-243</td>
+                <td class="col-note"></td>
             </tr>
             <tr>
-                <th>관리부서</th>
-                <td>생산운영과</td>
+                <td class="col-gubun">부문[담당]</td>
+                <td class="col-content">내업</td>
+                <td class="col-note"></td>
             </tr>
             <tr>
-                <th>담당자(정)</th>
-                <td>김가공</td>
+                <td class="col-gubun">관리부서</td>
+                <td class="col-content">가공소조립2부</td>
+                <td class="col-note"></td>
             </tr>
             <tr>
-<th>담당자(부)</th>
-                <td>홍길동</td>
+                <td class="col-gubun">담당자(정)</td>
+                <td class="col-content">김가공</td>
+                <td class="col-note" style="color: #4da6ff;">010-1234-5678</td>
             </tr>
             <tr>
-                <th>위치</th>
-                <td>제2공장 야외적치장</td>
+                <td class="col-gubun">담당자(부)</td>
+                <td class="col-content">지진철</td>
+                <td class="col-note"></td>
             </tr>
             <tr>
-                <th>용도분류</th>
-                <td>철제 팔레트</td>
+                <td class="col-gubun">위치</td>
+                <td class="col-content">가공소조립 21공장</td>
+                <td class="col-note"></td>
             </tr>
             <tr>
-                <th>최근 점검일</th>
-                <td class="highlight">2026-10-26</td>
+                <td class="col-gubun">상세위치</td>
+                <td class="col-content">옥외</td>
+                <td class="col-note"></td>
             </tr>
             <tr>
-                <th>점검결과</th>
-                <td style="color: #4cd137; font-weight: bold;">양호</td>
+                <td class="col-gubun">용도분류</td>
+                <td class="col-content">A2 팔레트</td>
+                <td class="col-note"></td>
+                </tr>
+            <tr>
+                <td class="col-gubun">최근 점검일</td>
+                <td class="col-content highlight">2026-10-26</td>
+                <td class="col-note"></td>
             </tr>
             <tr>
-                <th>최종 수정일</th>
-                <td>2026-10-26</td>
+                <td class="col-gubun">점검결과</td>
+                <td class="col-content" style="color: #4cd137; font-weight: bold;">양호</td>
+                <td class="col-note"></td>
+            </tr>
+            <tr>
+                <td class="col-gubun">최종 수정일</td>
+                <td class="col-content">2026-10-26</td>
+                <td class="col-note"></td>
             </tr>
         </table>
     </div>
