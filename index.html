@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팔레트 상세 검색</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #12121a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 22px;
+            color: #ffffff;
+        }
+.table-box {
+            background-color: #1a1a2e;
+            border: 1px solid #2a2a40;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #2a2a40;
+        }
+        th {
+            width: 35%;
+            color: #a0a0c0;
+            background-color: #161625;
+            font-weight: 500;
+        }
+        td {
+            width: 65%;
+            color: #ffffff;
+        }
+        tr:last-child th, tr:last-child td {
+            border-bottom: none;
+        }
+        .highlight {
+            color: #4da6ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>팔레트 상세 검색</h2>
+    
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>관리번호</th>
+                <td class="highlight">A2-243</td>
+            </tr>
+            <tr>
+                <th>부문[담당]</th>
+                <td>가공부</td>
+            </tr>
+            <tr>
+                <th>관리부서</th>
+                <td>생산운영과</td>
+            </tr>
+            <tr>
+                <th>담당자(정)</th>
+                <td>김가공</td>
+            </tr>
+            <tr>
+<th>담당자(부)</th>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <th>위치</th>
+                <td>제2공장 야외적치장</td>
+            </tr>
+            <tr>
+                <th>용도분류</th>
+                <td>철제 팔레트</td>
+            </tr>
+            <tr>
+                <th>최근 점검일</th>
+                <td class="highlight">2026-10-26</td>
+            </tr>
+            <tr>
+                <th>점검결과</th>
+                <td style="color: #4cd137; font-weight: bold;">양호</td>
+            </tr>
+            <tr>
+                <th>최종 수정일</th>
+                <td>2026-10-26</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
